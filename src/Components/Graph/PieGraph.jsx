@@ -1,4 +1,4 @@
-import {  ResponsiveContainer, Tooltip, YAxis,  Area,AreaChart} from 'recharts';
+import {  ResponsiveContainer, Tooltip, YAxis,  Area,AreaChart, XAxis} from 'recharts';
 import { curveCardinal } from 'd3-shape';
 
 export default function PieGraph(props) {
@@ -60,6 +60,7 @@ const cardinal = curveCardinal.tension(0.2);
           
         >
           <YAxis dataKey="total_amount" stroke='#e2e8f0'/>
+          <XAxis dataKey="date" stroke="#e2e8f0" />
           <Tooltip />
           <Area type="step" dataKey="total_amount" stroke="#8884d8" fill="#f333ff" fillOpacity={0.3} />
           <Area type={cardinal} dataKey="date" stroke="#f333ff" fill="#e2e8f0" fillOpacity={0.3} />
