@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    /* background-color: rgb(30 41 59); */
+    background-color: #020617;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh; 
+
+}
+
+.wallpaper{
+    /* background-image: url("../public//1.svg"); */
+    background-image: url("../public//blurr.svg");
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* background-repeat: repeat;
+    min-height: 100vh; */
+    
+    /* color: #e2e8f0; */
+    /* background-color: #94a3b8; */
+}
+
+
+.blurr{
+    background-image: url("../public//blurr.svg");
+    width: 100%;
+background-position: center center;
+background-size: cover;
+}
+.mBlur{
+    backdrop-filter: blur(25px);
+   }
