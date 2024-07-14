@@ -72,7 +72,7 @@ function App() {
           <div className="w-full flex gap-x-3">
             <select onChange={(e) => sorts(e.target.value)} className="select w-full  rounded-full  p-2 pl-5 lg:pl-8 my-3 text-xs lg:text-base text-main font-semibold  ">
               <option disabled selected>
-                Filter by customer name 
+                Filter by  name 
               </option>
               {
                 itemCust.map((person) => <option  key={person.id + person.name}>{person.name}</option>)
